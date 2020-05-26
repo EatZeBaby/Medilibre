@@ -1,0 +1,10 @@
+@import 'src/styles/vars';
+
+.appointment{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px lightgrey;
+  margin: 0 .5rem;
+  height: 3rem;
+}

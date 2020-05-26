@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "email-templates": "^7.0.4",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-mailer": "^0.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemailer": "^6.4.6",
+    "nodemailer-pug-engine": "^1.0.2",
+    "nodemon": "^2.0.3",
+    "pug": "^2.0.4",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "nodemon server.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}

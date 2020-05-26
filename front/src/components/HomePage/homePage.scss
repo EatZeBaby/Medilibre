@@ -1,0 +1,218 @@
+@import 'src/styles/vars';
+
+.homePage{
+  min-height: 100vh;
+  background-color: #f0ede8;
+  margin-top:40px;
+  color: #353B3C;
+
+  &-header{
+    width:100%;
+    height: 320px ;
+    background-size: cover;
+    position: relative;
+    background-position: bottom;
+    
+    .homepage-dark{
+      background-color: rgba($color: #000000, $alpha: .6);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left:0;
+      padding: 5rem 1rem 3rem;
+    }
+    
+
+    &-userConnect{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left:0;
+      color: #fff;
+      padding: 1rem;
+      text-align: right;
+      z-index:1;
+
+      &-connect{
+        padding:.5rem;
+      }
+
+      &-menu{
+        position: absolute;
+        right: 0;
+        background-color: #fff;
+        color: #000;
+        width: 250px;
+        z-index:3;
+
+        &-item{
+          padding: 1rem;
+          border-bottom:solid 1px #AAB6B6;
+        }
+      }
+    }
+
+    &-title{
+      text-align: center;
+      font-size: 30px;
+      color: #fff;
+      margin: 1rem 0 .3rem;
+      font-weight: bold;
+      font-family: $titleFont;
+      position: relative;
+      z-index: 0;
+    }
+
+    &-subtitle{
+      text-align: center;
+      font-size: 16px;
+      font-family: $titleFont;
+      color: #fff;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &-callToAction{
+    cursor: pointer;
+    height: 3rem;
+    margin: -1.5rem auto 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242a65;
+    color: #fff;
+    font-family: $titleFont;
+    position: relative;
+    z-index: 1;
+    max-width: 250px;
+    box-shadow: 0px 0px 71px -9px rgba(0,0,0,0.41);
+
+    &:hover{
+      background-color: #282e75;;
+    }
+  }
+
+  &-content{
+    margin: 2rem 2rem 0;
+    line-height: 1.5;
+    text-align: justify;
+
+    &-cabinet{
+      display: flex;
+      flex-direction: column;
+
+      &-presentation {
+        text-align: center;
+        margin: 2rem 0;
+      }
+  
+      &-box{
+        background-color: #242a65;
+        color: #fff;
+        margin: 0rem -2rem;
+        padding: 182px 2rem 132px;
+        text-align: center;
+        box-shadow: 0px 0px 71px -9px rgba(0,0,0,0.41);
+
+        &-title{
+          font-weight: bold;
+          font-size: 20px;
+          margin: 1rem 0 .5rem;
+        }
+
+        &-important{
+          font-size: 18px;
+        }
+
+        &-email{
+          text-decoration: underline;
+        }
+      }
+
+      &-schedule{
+        margin-top: -100px;
+        max-width: 400px;
+        background-color: #353B3C;
+        color: #fff;
+        padding: 2rem;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        box-shadow: 0px 0px 71px -9px rgba(0,0,0,0.41);
+
+         &-title{
+            font-weight: bold;
+            font-size: 20px;
+            margin: 1rem 0;
+
+         }
+
+        &-day{
+          margin-top: .2rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+  }
+
+  &-footer{
+    margin: 0 -2rem;
+    background-color:#242a65;
+    text-align: center;
+    color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 71px -9px rgba(0,0,0,0.41);
+  }
+
+  &-planning{
+    margin: 0 1rem;
+    border: 1px solid #AAB6B6;
+  }
+
+  &-modal-content{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem;
+    text-align: center;
+
+    & input{
+      min-width: 200px;
+    }
+
+    &-buttonContainer{
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+
+      & button{
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
+#mapid { height: 180px; }
+
+@media (min-width: 1100px) {
+
+  .homePage-content-cabinet-box{
+    padding-bottom: 3rem;
+  }
+
+  .homePage-content-cabinet-schedule{
+    margin-top: -300px;
+  }
+}
+
+@media (min-width:1600px) {
+  .homePage-content-cabinet-box{
+    padding-top: 3rem;
+  }
+}

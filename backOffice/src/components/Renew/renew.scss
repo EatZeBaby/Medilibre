@@ -1,0 +1,24 @@
+@import 'src/styles/vars';
+
+.renew{
+  min-height: 100vh;
+  padding: 30px;
+  background-color: #f0ede8 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &-content{
+    max-width: 1200px;
+
+    background-color: #fdfdfd;
+    padding: 3rem;
+    box-shadow: 0px 0px 71px -9px rgba(0,0,0,0.41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
