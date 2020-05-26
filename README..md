@@ -1,4 +1,4 @@
-# Medilibre 
+# Medilibre V1.0.0
 
 Application libre de droit sous licence MIT crée par Martin Brunel (martinbrunel@hotmail.fr)
 Vous êtes libre d'utiliser, réutiliser diffuser et vendre le produit si vous le souhaitez.
